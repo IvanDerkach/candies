@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Regular.woff');
+    src: local('../fonts/Gilroy-Regular.woff'),
+    url('../fonts/Gilroy-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+h1 {
+	font-family: 'Gilroy', sans-serif;
+}
+body {
+	background: #FFFFFF;
+}
+p {
+	font-family: 'Roboto', sans-serif;
+}
