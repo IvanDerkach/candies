@@ -4,6 +4,10 @@ body {
   margin: 0;
 }
 
+li {
+  list-style-type: none;
+}
+
 .main_content {
   display: flex;
   justify-content: space-around;
