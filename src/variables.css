@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Bold.eot");
+  src: local("Gilroy Bol"),
+    local("Gilroy-Bold"),
+    url("../fonts/Gilroy-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Gilroy-Bold.woff") format("woff"),
+    url("../fonts/Gilroy-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+html {
+  --title_color: #313335;
+  --text_color: #6e7680;
+  --background_light: #f0f4f7;
+  --hover_background: #e2eaf0;
+  --green_border: #6bca3e;
+  --placeholder: #a8adb2;
+  --violet: #902156;
+  --hover_violet: #ae2968;
+  --li_color: #a8b3c2;
+  --error_background: rgba(218, 67, 83, 0.1);
+  --error_border: rgba(218, 67, 83, 0.4);
+}
+
