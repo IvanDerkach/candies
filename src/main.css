@@ -11,7 +11,7 @@ li {
 .main_content {
   display: flex;
   justify-content: space-around;
-  padding: 158px 158px 70px 118px;
+  padding: 158px 182px 70px 155px;
 }
 
 .box_left,
@@ -26,7 +26,7 @@ li {
 }
 
 .box_left {
-  padding: 35px 0 0 30px;
+  padding: 35px 0 0 0;
   margin-right: 150px;
 }
 
@@ -87,11 +87,51 @@ li {
   border-radius: 30px;
   height: 60px;
   width: 100%;
-  border: none;
+  border: 2px solid transparent;
   box-sizing: border-box;
   padding-left: 30px;
   cursor: pointer;
+}
+
+.input_email:hover {
+  background: var(--hover_background);
+  transition: 0.1s;
+}
+
+.input_email:focus:valid {
+  border: 2px solid var(--green_border);
   outline: none;
+  transition: 0.1s;
+  background-color: white;
+}
+
+.input_email:active {
+  border: 2px solid white;
+  outline: none;
+  transition: 0.1s;
+  background-color: white;
+}
+
+.input_email:focus:invalid {
+  background: var(--error_background);
+  border: 2px solid var(--error_border);
+  outline: none;
+  transition: 0.1s;
+}
+
+.input_email:focus:valid + .submit_email {
+  border: 2px solid var(--green_border);
+}
+
+.input_email:focus:invalid + .submit_email {
+  border: 2px solid var(--error_border);
+}
+
+.input_email::placeholder {
+  color: var(--placeholder);
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Roboto", serif;
 }
 
 .submit_email {
@@ -105,18 +145,16 @@ li {
   border-radius: 50%;
   width: 43px;
   height: 43px;
-  border: none;
   background-repeat: no-repeat;
 }
 
-/*right side of main article*/
+/*right side of the main article*/
 
 .apps_list {
   display: flex;
-  justify-content: space-between;
+  padding: 0;
   margin-top: 0;
   flex: 1 300px;
-  flex-wrap: wrap;
 }
 
 .navigation_icon {
@@ -124,9 +162,21 @@ li {
   width: 24px;
   height: 24px;
   border-radius: 50%;
+  border: 2px solid transparent;
   display: flex;
   align-content: flex-start;
   justify-content: center;
+}
+
+.navigation_icon:hover {
+  background-color: var(--hover_background);
+  transition: 0.1s;
+}
+
+.navigation_icon:focus {
+  border: 2px solid var(--green_border);
+  transition: 0.1s;
+  background-color: white;
 }
 
 .nav_li {
@@ -136,6 +186,7 @@ li {
 .menu_list {
   display: flex;
   flex-direction: column;
+  padding: 0;
   margin-bottom: 0;
 }
 
@@ -185,6 +236,11 @@ li {
   outline: none;
 }
 
+.link:focus {
+  border: 2px solid var(--green_border);
+  transition: 0.1s;
+}
+
 .container_link {
   display: flex;
   justify-content: space-between;
@@ -194,8 +250,8 @@ li {
 .all_candies {
   background: var(--violet);
   border-radius: 22px;
-  width: 100%;
-  height: 50px;
+  width: 470px;
+  height: 44px;
   font-family: Gilroy, serif;
   font-size: 14px;
   text-align: center;
@@ -205,4 +261,96 @@ li {
   margin-top: 12px;
   outline: none;
   padding: 0;
+}
+
+/*footer*/
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 269px 182px 16px 155px;
+  background: var(--title_color);
+}
+
+.footer_cont {
+  display: flex;
+  justify-content: space-around;
+  min-width: 1400px;
+  padding: 0;
+  font-family: Gilroy, serif;
+  font-size: 14px;
+  color: white;
+  margin-bottom: 17px;
+}
+
+.left_foot {
+  margin-right: 150px;
+  margin-left: -26px;
+  min-width: 470px;
+}
+
+.right_foot {
+  min-width: 470px;
+  position: relative;
+
+}
+
+.left_foot,
+.right_foot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.all_ul {
+  padding: 13px 0 0;
+  font-family: Gilroy, serif;
+  font-size: 14px;
+  color: white;
+  margin-bottom: 17px;
+  display: block;
+}
+
+.all_li {
+  font-family: Roboto, serif;
+  font-size: 12px;
+  color: var(--li_color);
+  list-style: none;
+}
+
+.copyright {
+  position: absolute;
+  font-family: Roboto, serif;
+  font-size: 11px;
+  color: var(--text_color);
+  text-align: end;
+  bottom: 16px;
+
+}
+
+.site_mail {
+  color: var(--green_border);
+}
+
+.last {
+  max-width: 213px;
+  width: 100%;
+  line-height: 17px;
+}
+
+.cooperation {
+  font-family: Roboto, serif;
+  font-size: 12px;
+  color: white;
+  display: block;
+  margin-top: 36px;
+  margin-right: 50px;
+}
+
+.a_footer {
+  font-size: 12px;
+  color: var(--li_color);
+  text-decoration: none;
+  padding: 8px 10px 5px 0;
+  display: inline-block;
 }

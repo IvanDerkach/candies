@@ -1,14 +1,12 @@
-# Project Name
+# Candies
 
 ### [Demo](https://ivanderkach.github.io/candies/src/index.html)
 
-### Description
+Home work
 
-Tell about your project
 
 ### Technologies are used
 
 - HTML
 - CSS
-- ...
-"# candies" 
+
