@@ -1,6 +1,6 @@
 # Project Name
 
-### [Demo](https://link-to-github-pages.com)
+### [Demo](https://github.com/IvanDerkach/candies/src/index.html)
 
 ### Description
 
