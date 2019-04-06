@@ -1,6 +1,6 @@
 # Candies
 
-### [Demo](https://ivanderkach.github.io/candies/src/index.html)
+# [Demo](https://ivanderkach.github.io/candies/src/index.html)
 
 Home work
 
