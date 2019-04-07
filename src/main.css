@@ -136,7 +136,7 @@ li {
   outline: none;
   box-sizing: border-box;
   background: var(--green_border) url("../img/button_active.svg") no-repeat center;
-  transition: 0.3s;
+  transition: 0.1s;
 }
 
 .input_email::placeholder {
