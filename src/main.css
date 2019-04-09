@@ -288,26 +288,19 @@ body {
 
 /*footer*/
 
-footer {
-  display: flex;
-  width: 100%;
-  background: var(--title_color);
-}
-
 .footer {
   display: flex;
   background: var(--title_color);
-  justify-content: space-between;
+  justify-content: space-around;
   font-family: Roboto, serif;
-  padding: 268px 0 0 155px;
-  max-width: 1230px;
+  padding: 268px 182px 0 155px;
 }
 
 .left_footer {
   display: flex;
   justify-content: space-between;
-  width: 470px;
-  margin: 0 58px;
+  flex-basis: 470px;
+  margin-right: 150px;
 }
 
 .footer_news_list {
@@ -352,9 +345,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 490px;
-  padding-left: 150px;
-  margin-left: 50px;
+  flex-basis: 470px;
 }
 
 .right_footer_up {
