@@ -164,9 +164,10 @@ li {
 
 .apps_list {
   display: flex;
-  padding: 0;
-  margin-top: 0;
+  padding: 0 0 18px;
+  margin: 0 0 12px;
   flex: 1 300px;
+  border-bottom: 1px solid var(--background_light);
 }
 
 .navigation_icon {
@@ -203,8 +204,24 @@ li {
 }
 
 .menu_containers {
+  display: flex;
+  flex-direction: column;
   height: 99px;
-  margin-bottom: 30px;
+  padding: 0 20px;
+  margin: 17px 0 0;
+  border-bottom: 1px solid var(--background_light);
+}
+
+.container_up_side {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.container_bottom_side {
+  display: flex;
+  justify-content: space-between;
 }
 
 .java {
@@ -212,25 +229,27 @@ li {
   font-size: 12px;
   letter-spacing: 0.1em;
   color: var(--violet);
-  margin-left: 15px;
-  margin-top: 27px;
 }
 
 .cont_name {
   font-family: Gilroy, serif;
   font-size: 19px;
   color: var(--title_color);
-  margin-top: 5px;
-  margin-bottom: 0;
-  margin-left: 15px;
+  margin: 5px 0 0;
+}
+
+.dots {
+  position: absolute;
+  top: 5px;
+  right: 0;
 }
 
 .css_frame {
   font-family: Roboto, serif;
   font-size: 14px;
   line-height: 21px;
+
   color: var(--text_color);
-  margin: 20px 0 20px 15px;
 }
 
 .link {
@@ -238,25 +257,19 @@ li {
   border: 2px solid #e2eaf0;
   box-sizing: border-box;
   border-radius: 22px;
-  margin: 15px 10px 10px;
   font-family: Gilroy, serif;
   font-size: 10px;
   letter-spacing: 0.1em;
   color: var(--text_color);
   width: 76px;
   height: 28px;
+  margin: 8px 0;
   outline: none;
 }
 
 .link:focus {
   border: 2px solid var(--green_border);
   transition: 0.1s;
-}
-
-.container_link {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .all_candies {
@@ -270,7 +283,7 @@ li {
   color: white;
   border: none;
   align-self: center;
-  margin-top: 12px;
+  margin-top: 40px;
   outline: none;
   padding: 0;
 }
