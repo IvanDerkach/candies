@@ -4,10 +4,6 @@ body {
   margin: 0;
 }
 
-li {
-  list-style-type: none;
-}
-
 .main_content {
   display: flex;
   justify-content: space-around;
@@ -164,6 +160,7 @@ li {
 
 .apps_list {
   display: flex;
+  list-style-type: none;
   padding: 0 0 18px;
   margin: 0 0 12px;
   flex: 1 300px;
@@ -206,6 +203,7 @@ li {
 .menu_containers {
   display: flex;
   flex-direction: column;
+  list-style-type: none;
   height: 99px;
   padding: 0 20px;
   margin: 17px 0 0;
